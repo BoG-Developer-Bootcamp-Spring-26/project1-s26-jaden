@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Bits of Good Mid Semester Project</h1>
+
+    <div class="main-container">
+
+        <div class="small-container">
+            <div class="sprite-grid">
+                <img id="sprite-img" alt="">
+            </div>
+            <div class="sprite-name">
+                <span id="pokemon-name"></span>
+            </div>
+
+            <div class="types-section">
+                <p><strong>Types:</strong></p>
+                <div id="types-container"></div>
+            </div>
+
+            <div class="button-container arrows">
+                <img src="leftArrow.png" id="left-arrow">
+                <img src="rightArrow.png" id="right-arrow">
+            </div>
+
+        </div>
+
+        <div class="small-container">
+            <div class="info-header">
+                Info
+            </div>
+
+            <div class="info-container" id="panel-content">
+            </div>
+
+            <div class="button-container tabs">
+                <button class="info-button active" id="info-tab">Info</button>
+                <button class="moves-button" id="moves-tab">Moves</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

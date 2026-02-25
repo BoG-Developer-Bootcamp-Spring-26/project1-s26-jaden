@@ -123,9 +123,9 @@ function renderInfo(data) {
 function renderMoves(data) {
     panelContent.innerHTML = "";
 
-    data.moves.forEach(moveObj => {
-        panelContent.innerHTML += `<p>${moveObj.move.name}</p>`;
-    });
+    for (let i = 0; i < 9; i++) {
+        panelContent.innerHTML += `<p>${data.moves[i].move.name}</p>`;
+    }
 }
 
 fetchPokemon(currentPokemonId);

@@ -51,6 +51,11 @@ h1 {
     align-items: center;
 }
 
+#sprite-img {
+    width: 200px;
+    height: auto;
+}
+
 #types-container {
     display: flex;
     gap: 0.5rem;
@@ -63,19 +68,32 @@ h1 {
     padding: 6px 18px;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
+    cursor: default;
 }
 
 .button-container.arrows {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;              
+    align-self: center;
+    gap: 1.5rem;
     margin-top: 1.5rem;
 }
 
-.button-container.arrows img {
-    width: 3rem;
-    height: 3rem;
+.arrow-box {
+    width: 120px;
+    height: 55px;
+    background-color: #d9d9d9;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-box img {
+    width: 28px;
+    height: 28px;
 }
 
 .info-header {
